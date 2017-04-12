@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Simon Game</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <h1 id="statu">Welcome!!</h1>
+<div class="container">
+  <div class="color-group">
+    <div class="userBtn lime" id="a1">
+      <audio  class="audio" id="audio1" src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3" ></audio>
+    </div>
+    <div class="userBtn red" id="a2">
+       <audio class="audio" id="audio2" src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3" ></audio>
+    </div>
+    <div class="userBtn yellow" id="a3">
+       <audio class="audio" id="audio3" src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3" ></audio>
+    </div>
+    <div class="userBtn blue" id="a4">
+       <audio class="audio" id="audio4" src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3" ></audio>
+    </div>
+  </div>
+  <div class="center-control">
+    <div class="count-box">
+      <p class="count-title">count</p>
+      <div class="screen">
+        <p id="count-text">--</p>
+      </div>
+    </div><!--count-box over-->
+    <button id="start">start</button>
+    <button id="strict">strict</button>
+    <div class="toggle">
+      <label class="switch">
+              <input type="checkbox" onchange="toggleReady(this)" id="toggleCheck">
+              <div class="slider round"></div>
+      </label>
+    </div>
+  <div>
+</div>
+<script src="js/index.js"></script>
+
+</body>
+</html>

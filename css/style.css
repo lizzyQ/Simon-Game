@@ -1,0 +1,194 @@
+body{
+  background:#2b2b2b;
+  text-align:center;
+}
+h1{
+  margin:40px auto;
+  color: #daeef8;
+  position:relative;
+  text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
+}
+h1:before{
+  position:absolute;
+  top:0;
+  left:0;
+  content:"Simon Game";
+  width:150px;
+  height:30px;
+  border:1px solid #000;
+  font-size:1.5rem;
+  color: rgba(0,0,0,0.6);
+  text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
+}
+.container{
+  width:440px;
+  height:440px;
+  margin:0 auto;
+  -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+  border-radius:50%;
+  background:#111111;
+  position:relative;
+  box-shadow: 3px -3px 5px #798c96,
+             -3px 3px 5px #798c96,
+             -3px -3px 5px #798c96,
+             3px 3px 5px #798c96;
+}
+.color-group div{
+  width:190px;
+  height:190px;
+  position:absolute;
+  opacity:0.6;
+}
+.lime{
+  top:20px;
+  left:20px;
+  background:lime;
+  border-radius: 100% 0 0 0;
+}
+.red{
+  top:20px;
+  right:20px;
+  background: red;
+  border-radius: 0 100% 0 0;
+}
+.yellow{
+  bottom:20px;
+  left:20px;
+  background: rgb(255,255,20);
+  border-radius: 0 0 0 100%;
+}
+.blue{
+  bottom:20px;
+  right:20px;
+  background:blue;
+  border-radius: 0 0 100% 0;
+}
+
+.color-group div.active:active{
+  opacity:1; 
+}
+.center-control{
+  background:#daeef8;
+  width:200px;
+  height:200px;
+  position:absolute;
+  top: 105px;
+  left: 105px;
+  -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+  border-radius:50%;
+  border:10px solid #111111;
+}
+.count-title{
+  font-size:1.5rem;
+  margin:10px auto 5px auto;
+}
+.screen{
+  width: 80px;
+  height:30px;
+  margin:0 auto;
+  border:6px solid #111111;
+  background:rgb(50,5,12);
+  color:rgb(67,7,16);
+  -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+  border-radius:5px;
+}
+#count-text{
+  padding:0;
+  margin:0;
+  position:relative;
+  top:-3px;
+  left:3px;
+  font-size: 30px;
+  letter-spacing:5px;
+}
+#start,
+#strict{
+    display: inline-block;
+    position: relative;
+    margin: 12px 8px;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    font: bold 18px Arial, sans-serif;
+    cursor:pointer;
+    color:#2b2b2b;
+    text-shadow: 1px 1px 1px rgba(218,238,248, .44);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    -webkit-box-shadow: 1px 1px 3px rgba(0,0,0, .29), 
+      inset 1px 1px 1px rgba(255,255,255, .44);
+    -moz-box-shadow: 1px 1px 3px rgba(0,0,0, .29), 
+      inset 1px 1px 1px rgba(255,255,255, .44);
+     box-shadow: 1px 1px 3px rgba(0,0,0, .29), 
+      inset 1px 1px 1px rgba(255,255,255, .44);   
+}
+
+#start:focus, #strict:focus{ outline:none; }
+#start:hover, #strict:hover{color: #a5cd4e;}
+#start:active, #strict:active{ opacity:0.5; }
+#strict.active{
+  color:#2F4F4F;
+  background:#37FDFC;
+  border:2px solid #2f4f4f;
+}
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 30px;
+}
+.slider.round:before {
+  border-radius: 50%;
+}
