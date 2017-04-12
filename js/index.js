@@ -96,9 +96,11 @@ function check(){
           }
    }else if( clickE.length !== 0 ){  
         if(clickE.length === memo.length){
-                   if(step == 20){
+                   if(step == 21){
                     statu.innerHTML='You won! Congrats.';
                     statu.style.color = "lime";
+                    initial();
+                    showMoves();
                   } else {
                     statu.innerHTML = 'Good Move!';
                     showMoves();
